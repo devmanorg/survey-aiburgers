@@ -1,3 +1,5 @@
+// $(function(){
+
 var json = {
   title: "Опрос 'Отзывов о продукте'",
   // showProgressBar: "top",
@@ -73,3 +75,6 @@ survey.onComplete.add(function (result) {
 })
 
 survey.render("surveyElement")
+
+
+// });
