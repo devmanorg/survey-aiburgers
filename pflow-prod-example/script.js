@@ -1,4 +1,4 @@
-$(function(){
+// $(function(){
 
 var json = {
   title: "Опрос 'Отзывов о продукте'",
@@ -74,7 +74,12 @@ survey.onComplete.add(function (result) {
   document.querySelector("#result").innerHTML = "result: " + JSON.stringify(result.data)
 })
 
-survey.render("surveyElement")
+// survey.render("surveyElement")
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    survey.render("surveyElement");
+    //survey.render(document.getElementById("surveyContainer"));
 });
+
+
+// });
