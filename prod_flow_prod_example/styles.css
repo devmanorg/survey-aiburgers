@@ -1,0 +1,10 @@
+html, body, iframe {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden; /* Полосы прокрутки будут скрыты */
+}
