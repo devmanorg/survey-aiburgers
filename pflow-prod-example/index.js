@@ -1,6 +1,6 @@
 // $(function(){
 
-var json = {
+const json = {
   title: "Опрос 'Отзывов о продукте'",
   // showProgressBar: "top",
   pages: [ // Разбивка на страницы реализуется через список объектов `pages`
@@ -66,7 +66,7 @@ var json = {
   ],
 }
 
-Survey.StylesManager.applyTheme("defaultV2")
+// Survey.StylesManager.applyTheme("defaultV2")
 
 var survey = new Survey.Model(json)
 
@@ -77,8 +77,7 @@ survey.onComplete.add(function (result) {
 // survey.render("surveyElement")
 
 document.addEventListener("DOMContentLoaded", function() {
-    survey.render("surveyElement");
-    //survey.render(document.getElementById("surveyContainer"));
+    survey.render(document.getElementById("surveyContainer"));
 });
 
 
