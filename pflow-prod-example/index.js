@@ -1,8 +1,6 @@
-// $(function(){
-
 const json = {
   title: "Опрос 'Отзывов о продукте'",
-  // showProgressBar: "top",
+  // showProgressBar: "top",  // Добавляет номер текущей / количество страниц в опроснике
   pages: [ // Разбивка на страницы реализуется через список объектов `pages`
     {
       questions: [  // Разбивка на блоки / вопросы -- через список объектов `questions`
@@ -50,10 +48,10 @@ const json = {
           ],
         },
         {
-          type: "text",  // Автоматически опознаётся браузером как поле ввода e-mail
+          type: "text",
           name: "email",
           title:
-            "e-mail",
+            "E-mail",
         },
         {
           type: "comment",
@@ -66,19 +64,12 @@ const json = {
   ],
 }
 
-// Survey.StylesManager.applyTheme("defaultV2")
-
 var survey = new Survey.Model(json)
 
 survey.onComplete.add(function (result) {
   document.querySelector("#result").innerHTML = "result: " + JSON.stringify(result.data)
 })
 
-// survey.render("surveyElement")
-
 document.addEventListener("DOMContentLoaded", function() {
     survey.render(document.getElementById("surveyContainer"));
 });
-
-
-// });
