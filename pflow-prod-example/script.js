@@ -1,4 +1,4 @@
-// $(function(){
+$(function(){
 
 var json = {
   title: "Опрос 'Отзывов о продукте'",
@@ -77,4 +77,4 @@ survey.onComplete.add(function (result) {
 survey.render("surveyElement")
 
 
-// });
+});
