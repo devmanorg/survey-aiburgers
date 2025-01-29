@@ -7,6 +7,8 @@ const json = {
         {
           type: "rating",
           name: "satisfaction",
+          isRequired: true,
+          defaultValue: 5,
           title: "На сколько Вы удовлетворены нашим Продуктом?",
           mininumRateDescription: "Не удовлетворён",
           maximumRateDescription: "Полностью удовлетворён",
