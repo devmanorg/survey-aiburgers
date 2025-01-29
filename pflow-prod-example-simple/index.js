@@ -17,10 +17,10 @@ const json = {
         },
         {
           type: "checkbox",
-          name: "troubles",
+          name: "advantages",
           isRequired: true,
           title:
-            "Что Вам больше всего не понравилось?",
+            "Что Вам больше всего понравилось?",
           choices: [
             "product|Продукт",
             "price|Цена",
