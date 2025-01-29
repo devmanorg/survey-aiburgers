@@ -8,29 +8,16 @@ const json = {
           type: "rating",
           name: "satisfaction",
           isRequired: true,
-          defaultValue: 4,
-          "rateCount": 4,
-          "rateMax": 4,
+          defaultValue: 5,
+          "rateCount": 6,
+          "rateMax": 6,
           title: "На сколько Вас устраивает наш Продукт?",
           mininumRateDescription: "Не устраивает",
           maximumRateDescription: "Полностью устраивает",
         },
         {
-          type: "radiogroup",
-          name: "recommended",
-          visibleIf: "{satisfaction} > 3",
-          title:
-            "Кому бы Вы порекомендовали наш Продукт? (один вариант)",
-          choices: [
-            "family|Семье",
-            "friends|Друзьям",
-            "fools|Коллегам",
-          ],
-        },
-        {
           type: "checkbox",
           name: "troubles",
-          visibleIf: "{satisfaction} <= 3",
           isRequired: true,
           title:
             "Что Вам больше всего не понравилось?",
@@ -45,7 +32,7 @@ const json = {
           type: "comment",  // `type: "text"` -- для однострочного поля ввода
           name: "comment",
           title:
-            "Чего не хватает нашему Продукту? (опционально)",
+            "Чего не хватает нашему Продукту?",
         },
       ],
     },
