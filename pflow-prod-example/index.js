@@ -12,11 +12,11 @@ const json = {
           maximumRateDescription: "Полностью удовлетворён",
         },
         {
-          type: "checkbox",
+          type: "radiogroup",
           name: "recommended",
           visibleIf: "{satisfaction} > 3",
           title:
-            "Кому бы Вы порекомендовали наш Продукт?",
+            "Кому бы Вы порекомендовали наш Продукт? (один вариант)",
           choices: [
             "family|Семье",
             "friends|Друзьям",
@@ -26,7 +26,7 @@ const json = {
         {
           type: "checkbox",
           name: "troubles",
-          visibleIf: "{satisfaction} < 3",
+          visibleIf: "{satisfaction} <= 3",
           title:
             "Что Вам больше всего не понравилось?",
           choices: [
@@ -34,17 +34,6 @@ const json = {
             "price|Цена",
             "placement|Размещение",
             "promotion|Продвижение",
-          ],
-        },
-				{
-          type: "radiogroup",
-          name: "unique_selling_proposition",
-          title:
-            "Главное конкурентное преимущество нашего Продукта?",
-          choices: [
-            "features|Фичи",
-            "support|Поддержка",
-            "price|Цена",
           ],
         },
         {
